@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Page</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+            <label>Choose Payment Method</label>
+            <div class="payment-options">
+                <div class="payment-option">
+                    <img src="credit-card-icon.png" alt="Credit Card">
+                    Credit Card
+                </div>
+                <div class="payment-option">
+                    <img src="debit-card-icon.png" alt="Debit Card">
+                    Debit Card
+                </div>
+                <div class="payment-option">
+                    <img src="paypal-icon.png" alt="PayPal">
+                    PayPal
+                </div>
+                <div class="payment-option">
+                    <img src="upi-icon.png" alt="UPI">
+                    UPI
+                </div>
+                <div class="payment-option">
+                    <img src="net-banking-icon.png" alt="Net Banking">
+                    Net Banking
+                </div>
+                <div class="payment-option">
+                    <img src="wallet-icon.jpg" alt="Wallet">
+                    Wallet
+                </div>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>

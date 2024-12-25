@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Matrimony Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <!-- Step Indicator -->
+        <div class="step-indicator">
+            <span id="step-1" class="active">Personal Info</span>
+            <span id="step-2">Additional Info</span>
+            <span id="step-3">Partner Preferences</span>
+            <span id="step-4">Family Info</span>
+            <span id="step-5">Review & Submit</span>
+        </div>
+
+        <form id="registration-form">
+           <!-- Step 1: Personal Information -->
+<div class="form-page active" id="page-1">
+    <h2>Personal Information</h2>
+    <label for="full-name">Full Name</label>
+    <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
+    
+    <!-- Gender Section: Updated for Inclusivity -->
+    <label for="gender">Gender</label>
+    <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="non-binary" name="gender" value="Non-Binary" required>
+        <label for="non-binary">Non-Binary</label>
+        <input type="radio" id="other" name="gender" value="Other" required>
+        <label for="other">Other</label>
+        <input type="text" id="other-gender-text" name="other-gender" placeholder="Please specify" style="display:none;">
+    </div>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+    <label for="nationality">Nationality</label>
+    <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality" required>
+    <label for="height">Height (in cm)</label>
+    <input type="text" id="height" name="height" placeholder="e.g. 175" required>
+    <label for="weight">Weight (in kg)</label>
+    <input type="text" id="weight" name="weight" placeholder="e.g. 70" required>
+    <label for="blood-type">Blood Type</label>
+    <input type="text" id="blood-type" name="blood-type" placeholder="e.g. O+" required>
+    <label for="languages">Languages Known</label>
+    <input type="text" id="languages" name="languages" placeholder="e.g. English, Hindi" required>
+    <label for="profile-pic">Profile Picture</label>
+    <input type="file" id="profile-pic" name="profile-pic" accept="image/*" required>
+    <img id="profile-pic-preview" src="#" alt="Profile Preview" />
+    <div class="form-buttons">
+        <button type="button" id="next-btn-1">Next</button>
+    </div>
+</div>
+
+
+            <!-- Step 2: Additional Information -->
+            <div class="form-page" id="page-2">
+                <h2>Additional Information</h2>
+                <label for="education">Education</label>
+                <input type="text" id="education" name="education" required placeholder="Enter your highest qualification">
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" name="occupation" required placeholder="Enter your occupation">
+                <label for="income">Annual Income</label>
+                <input type="text" id="income" name="income" required placeholder="Enter your income">
+                <label for="marital-status">Marital Status</label>
+                <select id="marital-status" name="marital-status" required>
+                    <option value="Single">Single</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                </select>
+                <label for="contact">Emergency Contact</label>
+                <input type="tel" id="contact" name="contact" required placeholder="Enter emergency contact number">
+                <label for="social-media">Social Media Profile</label>
+                <input type="text" id="social-media" name="social-media" placeholder="Enter social media profile link">
+                <div class="form-buttons">
+                    <button type="button" id="back-btn-2">Back</button>
+                    <button type="button" id="next-btn-2">Next</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Partner Preferences -->
+            <div class="form-page" id="page-3">
+                <h2>Partner Preferences</h2>
+                <label for="preferred-age">Preferred Age Range</label>
+                <input type="text" id="preferred-age" name="preferred-age" placeholder="e.g. 25-30" required>
+                <label for="preferred-occupation">Preferred Occupation</label>
+                <input type="text" id="preferred-occupation" name="preferred-occupation" placeholder="e.g. Doctor, Engineer">
+                <label for="preferred-religion">Preferred Religion</label>
+                <input type="text" id="preferred-religion" name="preferred-religion">
+                <label for="preferred-country">Preferred Country</label>
+                <input type="text" id="preferred-country" name="preferred-country">
+                <div class="form-buttons">
+                    <button type="button" id="back-btn-3">Back</button>
+                    <button type="button" id="next-btn-3">Next</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Family Information -->
+            <div class="form-page" id="page-4">
+                <h2>Family Information</h2>
+                <label for="father-occupation">Father's Occupation</label>
+                <input type="text" id="father-occupation" name="father-occupation" required placeholder="Father's Occupation">
+                <label for="mother-occupation">Mother's Occupation</label>
+                <input type="text" id="mother-occupation" name="mother-occupation" required placeholder="Mother's Occupation">
+                <label for="siblings">Number of Siblings</label>
+                <input type="number" id="siblings" name="siblings" required placeholder="Enter number of siblings">
+                <label for="family-background">Family Background</label>
+                <textarea id="family-background" name="family-background" placeholder="Briefly describe your family background"></textarea>
+                <label for="family-income">Family Annual Income</label>
+                <input type="text" id="family-income" name="family-income" required placeholder="Enter family income">
+                <label for="house-type">House Type</label>
+                <input type="text" id="house-type" name="house-type" required placeholder="Enter type of house">
+                <div class="form-buttons">
+                    <button type="button" id="back-btn-4">Back</button>
+                    <button type="button" id="next-btn-4">Next</button>
+                </div>
+            </div>
+
+            <!-- Step 5: Review & Submit -->
+            <div class="form-page" id="page-5">
+                <h2>Review Your Details</h2>
+                <div id="review-details"></div>
+                <div class="form-buttons">
+                    <button type="button" id="back-btn-5">Back</button>
+                    <button type="submit" id="submit-btn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

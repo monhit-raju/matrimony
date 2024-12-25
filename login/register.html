@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Elite Matrimony</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Elite Matrimony</h1>
+    </header>
+
+    <section id="register">
+        <h2>Register</h2>
+        <form id="registerForm" onsubmit="return validateRegisterForm();">
+            <label for="registerName">Full Name:</label>
+            <input type="text" id="registerName" name="name" placeholder="Enter your full name" required>
+
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" name="email" placeholder="Enter your email" required>
+
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" name="password" placeholder="Enter your password" required>
+
+            <label for="registerConfirmPassword">Confirm Password:</label>
+            <input type="password" id="registerConfirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p>Already a member? <a href="login.html">Login here</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elite Matrimony. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

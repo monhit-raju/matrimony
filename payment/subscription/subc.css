@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Card container styling for subscription plans */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #a9b1bb;
+    border-color: #9ca3aa;
+    padding: 12px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    color: rgb(176, 36, 36);
+    text-transform: uppercase;
+    text-emphasis-color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #050606;
+    border-color: #050506;
+    transform: translateY(-3px);
+}
+
+.card-deck {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-columns {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+footer a {
+    color: #cbd3db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .card-deck {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card-columns {
+        column-count: 1;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
+/* Add a blue line under the Home link in the navbar */
+.navbar-nav .nav-item:first-child .nav-link {
+    border-bottom: 2px solid #202525; /* Blue line */
+    padding-bottom: 5px; /* Adjust space between text and line */
+    font-weight: bold; /* Optional: make the text bold for better emphasis */
+}
+
+/* Optionally, you can add a hover effect to make the blue line appear when hovering */
+.navbar-nav .nav-item:first-child .nav-link:hover {
+    border-bottom: 2px solid #08090a; /* Darker blue on hover */
+    color: #0e0f0f; /* Change text color on hover */
+}
+
+/* Other styles remain unchanged */
